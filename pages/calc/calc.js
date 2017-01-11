@@ -19,6 +19,13 @@ Page({
     logs: []
   },
   //數字點擊
+    onShareAppMessage: function () {
+    return {
+      title: '简单计算器',
+      desc: '方便使用的简单计算器',
+      path: '/page/calc/calc'
+    },
+   //分享小程序
   clickBtn: function (event) {
 
     var str = this.data.screenData; //获得当前显示数据 
